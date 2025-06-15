@@ -1,16 +1,18 @@
-/** @type {import('tailwindcss').Config} */
-export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+module.exports = {
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      textColor:{
-        text:'#0E5241',
-      }
+       fontFamily: {
+    playfair: ['"Playfair Display"', 'serif'],
+    poppins: ['Poppins'],
+    inter:['Inter', 'sans-serif'],
+  
+  },
+  animation: {
+        spinSlow: 'spin 30s linear infinite', // Adjust speed here
+      },
     },
   },
   plugins: [],
-};
+}
 
