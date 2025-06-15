@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
 
@@ -40,22 +40,38 @@ const MainNavbar = () => {
 
         },
     ]
+    // for sticky mainnavbar
+const [sticky,setsticky]=useState(false);
+useEffect(()=>{
+   const onscroll=()=>{
+
+     if(window.scrollY>50){
+       setsticky(true);
+     }
+     else{
+       setsticky(false);
+     }
+   };
+   window.addEventListener('scroll',onscroll);
+   return ()=> window.removeEventListener('scroll',onscroll);
+},[])
   return (
-    <div className='  shadow-xl shadow-[#e7e3e3]   '>
-        <nav className='w-10/12   mx-auto py-3  '>
-            <ul className='flex  items-center  justify-around'>
+    <div className={`shadow-md shadow-[#e7e3e3]  py-3 w-full z-50 transition-all duration-300 ${sticky?'fixed top-0 bg-[#E9D8A6]/80  w-full mx-auto':'relative'}`}>
+        <nav className='  w-11/12 mx-auto  '>
+            <ul className='flex  items-center justify-evenly '>
                 {
                     navlist.map((item,index)=>{
                         return(
                             <li key={index} className=''>
 
-                                <Link to={item.path} className='capitalize text-[16px] font-[400] text-[#414141] font-poppins hover:text-[#BA4A20] transition ease-in-out duration-300'>{item.name}</Link>
+                                <Link to={item.path} className='capitalize text-[16px] font-[400] text-[#414141] font-poppins hover:text-[#BA4A20] transition-all ease-in-out duration-300 hover:font-medium'>{item.name}</Link>
                             </li>
                         )
                     })
                 }
 
             </ul>
+           
         </nav>
 
     </div>
