@@ -1,5 +1,10 @@
 import React from "react";
-import { ImBookmark } from "react-icons/im";
+import {
+  CustomizeLeftArrow,
+  CustomizeRightArrow,
+} from "../../CustomizeArrow/Arrow.jsx";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 import { IoStar } from "react-icons/io5";
 import SingingBowl from "../../../assets/TopfeaturedProduct/singingbowl.png";
 import StoneWareMug from "../../../assets/TopfeaturedProduct/stonewaremug.png";
@@ -29,17 +34,32 @@ const Featuredproducts = () => {
       name: "Green Tara Lokta Lamp",
       price: "NRs 1,200",
     },
-    // {
-    //   image: LoktaLamp,
-    //   name: "Green Tara Lokta Lamp",
-    //   price: "NRs 1,200",
-    // },
-    // {
-    //   image: LoktaLamp,
-    //   name: "Green Tara Lokta Lamp",
-    //   price: "NRs 1,200",
-    // },
+    {
+      image: LoktaLamp,
+      name: "Green Tara Lokta Lamp",
+      price: "NRs 1,200",
+    },
+    {
+      image: LoktaLamp,
+      name: "Green Tara Lokta Lamp",
+      price: "NRs 1,200",
+    },
   ];
+
+  const responsive = {
+    desktop: {
+      breakpoint: { max: 3200, min: 1024 },
+      items: 4,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 3,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 2,
+    },
+  };
 
   return (
     <div className="bg-[#FFFCF3] w-full h-[650px] flex flex-col gap-5">
@@ -54,13 +74,30 @@ const Featuredproducts = () => {
       </div>
       {/* products card */}
 
-      <div className="w-full  ">
-        <div className="grid grid-cols-4 w-11/12 mx-auto gap-4  ">
+      <div className="w-full relative        ">
+
+
+       
+        <Carousel
+          responsive={responsive}
+          autoPlaySpeed={3000}
+          infinite={false}
+          arrows
+          swipeable
+          draggable
+          keyBoardControl
+          pauseOnHover
+          showDots={false}
+          containerClass="carousel-container  "
+          className="mx-8 "
+          customRightArrow={<CustomizeRightArrow />}
+          customLeftArrow={<CustomizeLeftArrow />}
+        >
           {topfeaturedProduct.map((item, index) => {
             return (
               <div
                 key={index}
-                className="flex flex-col justify-center w-[280px] h-[328px] m-auto bg-white my-10 rounded-lg hover:shadow-md transition-all duration-300 group shadow-sm"
+                className="  flex flex-col justify-center w-[280px] h-[348px] m-auto  my-10 rounded-lg hover:shadow-md transition-all duration-300 group shadow-sm bg-white  "
               >
                 <div className="w-[280px]  h-[228px] flex items-center justify-center relative ">
                   <img
@@ -68,7 +105,7 @@ const Featuredproducts = () => {
                     alt=""
                     className="w-36 h-fit  group-hover:scale-110 transition-all duration-300   "
                   />
-                  <IoHeartOutline className="text-red-800 text-lg absolute top-0 right-4 bottom-0 cursor-pointer" />
+                  <IoHeartOutline className="text-red-800 text-lg absolute -top-2 right-3 bottom-0 cursor-pointer" />
                 </div>
 
                 <div className="flex flex-col gap-2 px-5">
@@ -96,7 +133,8 @@ const Featuredproducts = () => {
               </div>
             );
           })}
-        </div>
+        </Carousel>
+       
       </div>
     </div>
   );
