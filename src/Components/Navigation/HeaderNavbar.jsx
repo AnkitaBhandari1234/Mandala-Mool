@@ -13,7 +13,7 @@ import { Link } from "react-router-dom";
 const HeaderNavbar = () => {
 
   return (
-    <div className=" grid grid-cols-9 items-center w-full px-10 py-5     ">
+    <div className=" grid grid-cols-9 items-center w-full px-10 py-7     ">
       {/*  logo image */}
       <div className="text-3xl col-span-2 font-playfair tracking-tight font-bold cursor-pointer px-12 w-fit   ">
         

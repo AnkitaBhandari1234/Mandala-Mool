@@ -32,9 +32,9 @@ const Herosection = () => {
           <div className=" relative  ">
             <div className="w-full h-full overflow-clip  ">
 
-            <img src={BannerMandala} alt="" className=" m-auto w-[450px] h-[450px] animate-spinSlow   " />
+            <img src={BannerMandala} alt="" className=" m-auto w-[460px] h-[439px] animate-spinSlow   " />
             </div>
-            <img src={BannerBuddha} alt="" className="absolute top-18 left-3 right-0 bottom-0 w-56 m-auto   "/>
+            <img src={BannerBuddha} alt="" className="absolute top-18 left-3 right-0 bottom-0 w-72 m-auto   "/>
 
           </div>
         </div>

@@ -10,40 +10,44 @@ import SingingBowl from "../../../assets/TopfeaturedProduct/singingbowl.png";
 import StoneWareMug from "../../../assets/TopfeaturedProduct/stonewaremug.png";
 import DragonPeacockWindow from "../../../assets/TopfeaturedProduct/window.png";
 import LoktaLamp from "../../../assets/TopfeaturedProduct/loktalamp.png";
+import WoolShawl from '../../../assets/TopfeaturedProduct/woolshawl.png';
+import ThangkaPainting from '../../../assets/TopfeaturedProduct/thangkapainting.png';
 import { IoHeartOutline } from "react-icons/io5";
+import Badge from "../Badge/Badge.jsx";
 
 const Featuredproducts = () => {
   const topfeaturedProduct = [
     {
       image: SingingBowl,
       name: "Tibetan Singing Bowl",
-      price: "NRs 12,835",
+      price: "NRs.12,835",
     },
     {
       image: StoneWareMug,
       name: "Himalayan Stoneware Mug",
-      price: "NRs 4,500",
+      price: "NRs.4,500",
     },
     {
       image: DragonPeacockWindow,
       name: "Dragon Peacock Window",
-      price: "NRs 1,200",
+      price: "NRs.1,200",
     },
     {
-      image: LoktaLamp,
-      name: "Green Tara Lokta Lamp",
-      price: "NRs 1,200",
+      image:LoktaLamp,
+      name:'Green Tara Lokta Lamp',
+      price: "Nrs.1,200",
     },
     {
-      image: LoktaLamp,
-      name: "Green Tara Lokta Lamp",
-      price: "NRs 1,200",
+      image: WoolShawl,
+      name: "Himalayan Wool Shawl",
+      price: "NRs.8,300",
     },
     {
-      image: LoktaLamp,
-      name: "Green Tara Lokta Lamp",
-      price: "NRs 1,200",
+      image: ThangkaPainting,
+      name: "Thangka Painting",
+      price: "NRs.40,000",
     },
+   
   ];
 
   const responsive = {
@@ -62,7 +66,7 @@ const Featuredproducts = () => {
   };
 
   return (
-    <div className="bg-[#FFFCF3] w-full h-[650px] flex flex-col gap-5">
+    <div className="bg-[#FEF7E9] w-full h-[650px] flex flex-col gap-5">
       {/* title */}
       <div className="flex flex-col items-center gap-1 pt-14 ">
         <h1 className="font-playfair font-[500] text-4xl text-[#9B4E2B] ">
@@ -81,7 +85,8 @@ const Featuredproducts = () => {
         <Carousel
           responsive={responsive}
           autoPlaySpeed={3000}
-          infinite={false}
+          infinite
+          autoPlay={true}
           arrows
           swipeable
           draggable
@@ -97,18 +102,19 @@ const Featuredproducts = () => {
             return (
               <div
                 key={index}
-                className="  flex flex-col justify-center w-[280px] h-[348px] m-auto  my-10 rounded-lg hover:shadow-md transition-all duration-300 group shadow-sm bg-white  "
+                className="  flex flex-col gap-2 justify-center w-[280px] h-[348px] m-auto  my-10 rounded-lg hover:shadow-md transition-all duration-300 group shadow-sm bg-white   "
               >
-                <div className="w-[280px]  h-[228px] flex items-center justify-center relative ">
+                <div className="w-[280px]   h-[228px] flex  items-center justify-center relative  ">
                   <img
                     src={item.image}
                     alt=""
-                    className="w-36 h-fit  group-hover:scale-110 transition-all duration-300   "
+                    className="w-32 h-fit  group-hover:scale-110 transition-all duration-300    "
                   />
+                  <Badge name='Best Seller' />
                   <IoHeartOutline className="text-red-800 text-lg absolute -top-2 right-3 bottom-0 cursor-pointer" />
                 </div>
 
-                <div className="flex flex-col gap-2 px-5">
+                <div className="flex flex-col gap-2 px-4">
                   <div className="flex gap-0.5 items-center">
                     <IoStar className="text-orange-400" />
                     <IoStar className="text-orange-400" />

@@ -56,7 +56,7 @@ useEffect(()=>{
    return ()=> window.removeEventListener('scroll',onscroll);
 },[])
   return (
-    <div className={`shadow-md shadow-[#e7e3e3]  py-3 w-full z-50 transition-all duration-300 ${sticky?'fixed top-0 bg-[#E9D8A6]/80  w-full mx-auto':'relative'}`}>
+    <div className={`shadow-md shadow-[#e7e3e3]  py-3 w-full z-50 transition-all duration-300 ${sticky?'fixed top-0 bg-[#E9D8A6]/90  w-full h-16 pt-5   mx-auto':'relative'}`}>
         <nav className='  w-11/12 mx-auto  '>
             <ul className='flex  items-center justify-evenly '>
                 {
