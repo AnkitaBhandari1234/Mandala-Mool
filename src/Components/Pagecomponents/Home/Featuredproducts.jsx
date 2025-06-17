@@ -1,7 +1,7 @@
 import React from "react";
 import {
-  CustomizeLeftArrow,
-  CustomizeRightArrow,
+  CustomizeDots,
+  
 } from "../../CustomizeArrow/Arrow.jsx";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -66,19 +66,29 @@ const Featuredproducts = () => {
   };
 
   return (
-    <div className="bg-[#FEF7E9] w-full h-[650px] flex flex-col gap-5">
+    <div className="bg-[#F9EEDA80] w-full h-[650px] flex flex-col gap-5">
       {/* title */}
-      <div className="flex flex-col items-center gap-1 pt-14 ">
-        <h1 className="font-playfair font-[500] text-4xl text-[#9B4E2B] ">
+      
+      <div className=" grid grid-cols-3 items-center pt-14  ">
+        <span className="h-[1px] col-span-1 bg-[#F4E9CA] mt-4 "></span>
+
+        <div className=" col-span-1 flex flex-col items-center gap-1 ">
+
+       
+        <h1 className="font-playfair font-[500] text-4xl text-[#9B4E2B] mt-1 ">
           Our Featured Products
+        
         </h1>
         <p className="font-poppins font-[400] text-[15px] text-[#717171]">
           Handpicked. Handmade. Honored.
         </p>
+        </div>
+        <span className=" h-[1px] col-span-1 bg-[#F4E9CA] mt-4 "></span>
       </div>
+      
       {/* products card */}
 
-      <div className="w-full relative        ">
+      <div className="w-full relative         ">
 
 
        
@@ -87,31 +97,32 @@ const Featuredproducts = () => {
           autoPlaySpeed={3000}
           infinite
           autoPlay={true}
-          arrows
+          arrows={false}
           swipeable
           draggable
           keyBoardControl
           pauseOnHover
-          showDots={false}
-          containerClass="carousel-container  "
-          className="mx-8 "
-          customRightArrow={<CustomizeRightArrow />}
-          customLeftArrow={<CustomizeLeftArrow />}
+          showDots={true}
+          containerClass="carousel-container  h-[440px]  "
+          className="mx-8  "
+         customDot={<CustomizeDots/>}
         >
           {topfeaturedProduct.map((item, index) => {
             return (
               <div
                 key={index}
-                className="  flex flex-col gap-2 justify-center w-[280px] h-[348px] m-auto  my-10 rounded-lg hover:shadow-md transition-all duration-300 group shadow-sm bg-white   "
+                className="  flex flex-col gap-2 justify-center w-[280px] relative  h-[348px] m-auto   rounded-lg hover:shadow-md transition-all duration-300 group shadow-sm bg-white   "
               >
-                <div className="w-[280px]   h-[228px] flex  items-center justify-center relative  ">
+                  <Badge name='Best Seller' />
+
+                  <IoHeartOutline className="text-red-800 text-lg absolute top-4 right-3 bottom-0 cursor-pointer" />
+                <div className="w-[280px]   h-[228px] flex  items-center justify-center   ">
                   <img
                     src={item.image}
                     alt=""
                     className="w-32 h-fit  group-hover:scale-110 transition-all duration-300    "
                   />
-                  <Badge name='Best Seller' />
-                  <IoHeartOutline className="text-red-800 text-lg absolute -top-2 right-3 bottom-0 cursor-pointer" />
+                  
                 </div>
 
                 <div className="flex flex-col gap-2 px-4">
