@@ -1,8 +1,7 @@
 import React from "react";
 import BannerImg from "../../assets/banner_bg.png";
-import BannerMandala from '../../assets/banner.png';
-import BannerBuddha from '../../assets/banner2.png';
-
+import BannerMandala from "../../assets/banner.png";
+import BannerBuddha from "../../assets/banner2.png";
 
 const Herosection = () => {
   return (
@@ -24,18 +23,26 @@ const Herosection = () => {
             </div>
             {/* for shop button */}
             <div>
-                <button className="font-poppins bg-[#BA4A20] text-lg font-medium text-white w-[155px] h-[48px] rounded-lg">Shop Now</button>
+              <button className="font-poppins bg-[#BA4A20] text-lg font-medium text-white w-[155px] h-[48px] rounded-lg">
+                Shop Now
+              </button>
             </div>
           </div>
 
           {/* image section */}
-          <div className=" relative  ">
+          <div className=" relative ml-9  ">
             <div className="w-full h-full overflow-clip  ">
-
-            <img src={BannerMandala} alt="" className=" m-auto w-[460px] h-[439px] animate-spinSlow   " />
+              <img
+                src={BannerMandala}
+                alt=""
+                className="  w-[320px] h-[310px] animate-spinSlow   "
+              />
             </div>
-            <img src={BannerBuddha} alt="" className="absolute top-18 left-3 right-0 bottom-0 w-72 m-auto   "/>
-
+            <img
+              src={BannerBuddha}
+              alt=""
+              className="absolute top-15 left-4 right-0 bottom-0 w-72 m-auto     "
+            />
           </div>
         </div>
       </div>
