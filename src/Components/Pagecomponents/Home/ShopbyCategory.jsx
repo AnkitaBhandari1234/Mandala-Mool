@@ -71,7 +71,7 @@ const ShopbyCategory = () => {
   return (
     <div className="relative   ">
       <img src={BannerImg} className="w-full h-[640px]     " />
-      <div className="bg-[#FEF7E9]/80 absolute top-0 right-0 bottom-0 left-0   "></div>
+      <div className="bg-[#FEF7E9]/60 absolute top-0 right-0 bottom-0 left-0   "></div>
       <div className="absolute top-0 flex flex-col w-full gap-10   ">
         {/* for text */}
         <div className=" flex   items-center h-[120px] px-20 pt-16  ">
@@ -109,25 +109,25 @@ const ShopbyCategory = () => {
             return (
               <div
                 key={index}
-                className="bg-white h-[350px] w-[240px] flex-col flex rounded-lg    "
+                className="bg-white h-[360px] w-[240px] flex-col flex rounded-lg shadow-sm cursor-pointer group  transition-all duration-300  ease-in-out   "
               >
                 <img
                   src={item.image}
                   alt="texties image"
-                  className="h-[231px] object-cover rounded-t-lg    "
+                  className="h-[231px] object-cover rounded-t-lg     "
                 />
-                <div className=" flex flex-col gap-4  h-[119px] rounded-lg px-4 py-1 bg-white">
+                <div className=" flex flex-col gap-3  h-[119px] rounded-lg px-4  bg-white">
                   <div>
                     <h1 className="text-[#9B4E2B] font-poppins font-semibold text-lg">
                       {item.name}
                     </h1>
-                    <p className="font-poppins text-[#6B7280] text-[10px] font-[400]">
+                    <p className="font-poppins text-[#6B7280] text-[14px] font-[400]">
                       {item.description}
                     </p>
                   </div>
                   <Link
                     to={item.path}
-                    className="border-[1.4px] border-[#BA4A20] rounded-lg w-[132px] h-[32px] text-center  flex items-center justify-center gap-1 "
+                    className="border-[1.4px] border-[#BA4A20] rounded-lg w-[132px] h-[32px] text-center  flex items-center justify-center gap-1 group group-hover:bg-[#FAF0DD] group-hover:border-none   "
                   >
                     <button className="text-[#BA4A20] font-[400] text-sm font-poppins  ">Explore More</button>
                 <PiArrowRightLight className="text-[#BA4A20]  stroke-[4]  " size={22}   />

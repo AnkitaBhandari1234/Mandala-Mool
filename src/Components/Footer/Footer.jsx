@@ -110,7 +110,7 @@ Each Piece Handpicked, Each Detail Honored.</p>
         </div>
       </div>
       {/* for copyright and icons */}
-      <div className='bg-[#2E140B] flex justify-between  py-2 px-20 '>
+      <div className='bg-[#2E140B] flex justify-between  py-2.5 px-20 '>
         {/* for copyright */}
         <div className='flex gap-0.5 items-center font-poppins font-[400] text-sm text-[#FAF0E6] '>
            
@@ -124,7 +124,7 @@ Each Piece Handpicked, Each Detail Honored.</p>
         {/* for icons */}
         <div className='flex gap-6 items-center pr-24'>
           <span className='font-poppins font-[400] text-sm tracking-wide text-[#FAF0E6]'>FOLLOW US</span>
-          <div className='w-5 flex gap-4'>
+          <div className='w-[21px] flex gap-4'>
 
           <img src={Facebook} alt='social media image'/>
           <img src={Instagram} alt='social media image'/>
