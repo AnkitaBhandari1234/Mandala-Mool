@@ -1,7 +1,7 @@
 import React from "react";
-import BannerImg from "../../assets/banner_bg.png";
-import BannerMandala from "../../assets/banner.png";
-import BannerBuddha from "../../assets/banner2.png";
+import BannerImg from "../../../assets/banner_bg.png";
+import BannerMandala from "../../../assets/banner.png";
+import BannerBuddha from "../../../assets/banner2.png";
 
 const Herosection = () => {
   return (
@@ -11,7 +11,7 @@ const Herosection = () => {
         <div className="bg-[#FEF7E9]/30 absolute top-0 right-0 bottom-0 left-0 "></div>
         <div className="absolute top-0 right-0 left-0 bottom-0 flex justify-between  w-11/12 mx-28  ">
           {/* text-section */}
-          <div className="flex flex-col gap-9 justify-center  w-[55%] h-full   ">
+          <div className="flex flex-col gap-9 justify-center  w-[50%] h-full   ">
             {/* for heading & slogan */}
             <div className="flex flex-col gap-5">
               <h1 className="font-playfair text-[42px] font-[600] text-[#D9A441]  leading-tight flex flex-col ">

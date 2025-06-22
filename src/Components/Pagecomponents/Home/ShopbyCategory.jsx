@@ -5,6 +5,7 @@ import Textiles from "../../../assets/ShopbyCategory/textiles.png";
 import Ceramics from "../../../assets/ShopbyCategory/ceramics.png";
 import Jewelry from "../../../assets/ShopbyCategory/jewelry.png";
 import Artifact from "../../../assets/ShopbyCategory/artifact.png";
+import Wellness from '../../../assets/ShopbyCategory/wellness.png';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { CustomizeDots } from "../../CustomizeArrow/Arrow";
@@ -45,7 +46,7 @@ const ShopbyCategory = () => {
       path: "/jewelry",
       image: Jewelry,
       name: "Jewelry",
-      description: "Handmade metal, bead, or gemstone ",
+      description: "Beaded necklaces, silver, ethnic earrings ",
     },
     {
       path: "/ceramics",
@@ -57,7 +58,13 @@ const ShopbyCategory = () => {
       path: "/artifact",
       image: Artifact,
       name: "Artifacts",
-      description: " Masks, thangka paintings, wood carvings",
+      description: " Brass statues, masks, prayer wheels",
+    },
+    {
+      path: "/wellness",
+      image: Wellness,
+      name: "Wellness",
+      description: "Herbal oils, incense, copper bottles",
     },
   ];
 
@@ -107,9 +114,9 @@ const ShopbyCategory = () => {
                 <img
                   src={item.image}
                   alt="texties image"
-                  className="h-[231px] object-cover rounded-t-lg   "
+                  className="h-[231px] object-cover rounded-t-lg    "
                 />
-                <div className=" flex flex-col gap-4  h-[119px] rounded-lg px-4 py-1 ">
+                <div className=" flex flex-col gap-4  h-[119px] rounded-lg px-4 py-1 bg-white">
                   <div>
                     <h1 className="text-[#9B4E2B] font-poppins font-semibold text-lg">
                       {item.name}
