@@ -62,26 +62,27 @@ const Featuredproducts = () => {
   };
 
   return (
-    <div className="bg-[#F9EEDA80] w-full h-[650px] flex flex-col gap-5">
+    <div className="bg-[#FAF0DD] w-full h-[640px] flex flex-col gap-7  ">
       {/* title */}
 
-      <div className=" grid grid-cols-3 items-center pt-14  ">
-        <span className="h-[1px] col-span-1 bg-[#F4E9CA] mt-4 "></span>
+      <div className=" flex   items-center h-[120px] px-20 pt-16  ">
+        <span className="w-[25%] h-[1px] col-span-1 bg-[#F4E9CA]  "></span>
 
-        <div className=" col-span-1 flex flex-col items-center gap-1 ">
-          <h1 className="font-playfair font-[500] text-4xl text-[#9B4E2B] mt-1 ">
+        <div className=" w-[50%]  flex flex-col items-center gap-2  ">
+          <h1 className="font-playfair font-[500] text-[42px] text-[#9B4E2B] mx-10   ">
             Our Featured Products
           </h1>
-          <p className="font-poppins font-[400] text-[15px] text-[#717171]">
-            Handpicked. Handmade. Honored.
+          <p className="font-poppins font-[400] text-lg text-[#414141] text-center leading-[20px] tracking-wide">
+            Our finest selections, loved for their authenticity,<br/>
+ detail, and cultural essence.
           </p>
         </div>
-        <span className=" h-[1px] col-span-1 bg-[#F4E9CA] mt-4 "></span>
+        <span className=" w-[25%] h-[1px] col-span-1 bg-[#F4E9CA]  "></span>
       </div>
 
       {/* products card */}
 
-      <div className="w-full relative         ">
+      <div className=" mx-auto relative w-full ">
         <Carousel
           responsive={responsive}
           autoPlaySpeed={3000}
@@ -93,15 +94,15 @@ const Featuredproducts = () => {
           keyBoardControl
           pauseOnHover
           showDots={true}
-          containerClass="carousel-container  h-[440px]  "
-          className="mx-8  "
+          containerClass="carousel-container  h-[440px] w-11/12 mx-auto   "
+          className="  "
           customDot={<CustomizeDots />}
         >
           {topfeaturedProduct.map((item, index) => {
             return (
               <div
                 key={index}
-                className="  flex flex-col gap-2 justify-center w-[280px] relative  h-[348px] m-auto   rounded-lg hover:shadow-md transition-all duration-300 group shadow-sm bg-white   "
+                className="  flex flex-col gap-2 justify-center w-[275px] relative  h-[336px] m-auto   rounded-lg hover:shadow-md transition-all duration-300 group shadow-sm bg-white   "
               >
                 <Badge name="Best Seller" />
 

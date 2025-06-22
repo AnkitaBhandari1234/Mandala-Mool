@@ -6,8 +6,8 @@ import Footer from "../Components/Footer/Footer";
 
 const Layout = () => {
   return (
-    <div>
-      <HeaderNavbar />
+    <div className="overflow-clip">
+      <HeaderNavbar/>
 
       <MainNavbar />
 

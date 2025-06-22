@@ -1,12 +1,14 @@
 import React from 'react'
 import Herosection from '../Components/Pagecomponents/Herosection'
 import Featuredproducts from '../Components/Pagecomponents/Home/Featuredproducts'
+import ShopbyCategory from '../Components/Pagecomponents/Home/ShopbyCategory'
 
 const Home = () => {
   return (
-    <div>
+    <div className=''>
         <Herosection/>
         <Featuredproducts/>
+        <ShopbyCategory/>
     </div>
   )
 }

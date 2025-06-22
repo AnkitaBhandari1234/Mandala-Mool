@@ -5,20 +5,24 @@ import BannerBuddha from "../../assets/banner2.png";
 
 const Herosection = () => {
   return (
-    <div className="relative  ">
-      <div className="  h-[480px] bg-cover  ">
+    <div className="relative   ">
+      <div className="  h-[480px] bg-cover   ">
         <img src={BannerImg} className="w-full h-full bg-contain " />
-        <div className="bg-[#FEF7E9]/50 absolute top-0 right-0 bottom-0 left-0"></div>
-        <div className="absolute top-0 right-0 left-0 bottom-0 flex ">
+        <div className="bg-[#FEF7E9]/30 absolute top-0 right-0 bottom-0 left-0 "></div>
+        <div className="absolute top-0 right-0 left-0 bottom-0 flex justify-between  w-11/12 mx-28  ">
           {/* text-section */}
-          <div className="flex flex-col gap-14 h-[400px] px-24 justify-center   ">
+          <div className="flex flex-col gap-9 justify-center  w-[55%] h-full   ">
             {/* for heading & slogan */}
-            <div className="">
-              <h1 className="font-playfair text-[36px] font-[600] text-[#A0522D] leading-loose ">
-                Sacred Craft, Born in the Himalayas
+            <div className="flex flex-col gap-5">
+              <h1 className="font-playfair text-[42px] font-[600] text-[#D9A441]  leading-tight flex flex-col ">
+                Discover Unique
+                <span className="text-[#A0522D]">
+Handcrafted Treasures </span>
               </h1>
-              <p className="text-sm font-[400] font-poppins text-[#414141]">
-                Hand-carved artifacts to bless your home.
+              <p className="text-base font-[400] font-poppins text-[#414141] leading-tight w-5/6 ">
+                Explore our curated collection  of authentic handmade
+products crafted by skilled artisans from around the world
+
               </p>
             </div>
             {/* for shop button */}
@@ -30,18 +34,18 @@ const Herosection = () => {
           </div>
 
           {/* image section */}
-          <div className=" relative ml-9  ">
-            <div className="w-full h-full overflow-clip  ">
+          <div className=" relative  w-[45%] pl-14 overflow-clip     ">
+            <div className=" overflow-clip w-[315px] h-fit ">
               <img
                 src={BannerMandala}
                 alt=""
-                className="  w-[320px] h-[310px] animate-spinSlow   "
+                className=" w-fit  h-fit   animate-spinSlow     "
               />
             </div>
             <img
               src={BannerBuddha}
               alt=""
-              className="absolute top-15 left-4 right-0 bottom-0 w-72 m-auto     "
+              className="absolute top-7 left-12 right-0 bottom-0    w-[343px]   h-[500px]   "
             />
           </div>
         </div>
