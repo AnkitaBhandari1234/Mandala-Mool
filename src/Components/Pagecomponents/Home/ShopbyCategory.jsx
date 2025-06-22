@@ -71,7 +71,7 @@ const ShopbyCategory = () => {
   return (
     <div className="relative   ">
       <img src={BannerImg} className="w-full h-[640px]     " />
-      <div className="bg-[#FEF7E9]/60 absolute top-0 right-0 bottom-0 left-0   "></div>
+      <div className="bg-[#FEF7E9]/80 absolute top-0 right-0 bottom-0 left-0   "></div>
       <div className="absolute top-0 flex flex-col w-full gap-10   ">
         {/* for text */}
         <div className=" flex   items-center h-[120px] px-20 pt-16  ">

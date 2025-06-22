@@ -8,7 +8,7 @@ const Herosection = () => {
     <div className="relative   ">
       <div className="  h-[480px] bg-cover   ">
         <img src={BannerImg} className="w-full h-full bg-contain " />
-        <div className="bg-[#FEF7E9]/30 absolute top-0 right-0 bottom-0 left-0 "></div>
+        <div className="bg-[#FEF7E9]/50 absolute top-0 right-0 bottom-0 left-0 "></div>
         <div className="absolute top-0 right-0 left-0 bottom-0 flex justify-between  w-11/12 mx-28  ">
           {/* text-section */}
           <div className="flex flex-col gap-9 justify-center  w-[50%] h-full   ">
