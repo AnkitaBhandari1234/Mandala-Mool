@@ -65,14 +65,14 @@ const Featuredproducts = () => {
     <div className="bg-[#FAF0DD] w-full h-[640px] flex flex-col gap-7  ">
       {/* title */}
 
-      <div className=" flex   items-center h-[120px] px-20 pt-16  ">
+      <div className=" flex   items-center h-[120px] px-16 pt-16  ">
         <span className="w-[25%] h-[1px] col-span-1 bg-[#F4E9CA]  "></span>
 
-        <div className=" w-[50%]  flex flex-col items-center gap-2  ">
-          <h1 className="font-playfair font-[500] text-[42px] text-[#9B4E2B] mx-10   ">
+        <div className=" w-[50%]  flex flex-col items-center gap-0.5  ">
+          <h1 className="font-playfair font-[500] text-[42px] text-[#9B4E2B] mx-10 tracking-[0.42px]   ">
             Our Featured Products
           </h1>
-          <p className="font-poppins font-[400] text-lg text-[#414141] text-center leading-[20px] tracking-wide">
+          <p className="font-poppins font-[400] text-base text-[#414141] text-center leading-[20px] ">
             Our finest selections, loved for their authenticity,<br/>
  detail, and cultural essence.
           </p>
@@ -102,12 +102,12 @@ const Featuredproducts = () => {
             return (
               <div
                 key={index}
-                className="  flex flex-col gap-2 justify-center w-[275px] relative  h-[336px] m-auto   rounded-lg hover:shadow-md transition-all duration-300 group shadow-sm bg-white   "
+                className="  flex flex-col gap-2 justify-center w-[275px] relative  h-[336px] m-auto   rounded-lg hover:shadow-md transition-all duration-300 group shadow-sm bg-white cursor-pointer   "
               >
                 <Badge name="Best Seller" />
 
                 <IoHeartOutline className="text-red-800 text-lg absolute top-4 right-3 bottom-0 cursor-pointer" />
-                <div className="w-[280px]   h-[228px] flex  items-center justify-center   ">
+                <div className="w-[275px]    h-[226px] flex  items-center justify-center    ">
                   <img
                     src={item.image}
                     alt=""
@@ -115,7 +115,7 @@ const Featuredproducts = () => {
                   />
                 </div>
 
-                <div className="flex flex-col gap-2 px-4">
+                <div className="flex flex-col gap-2 px-4  ">
                   <div className="flex gap-0.5 items-center">
                     <IoStar className="text-orange-400" />
                     <IoStar className="text-orange-400" />
