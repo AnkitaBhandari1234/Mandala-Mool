@@ -9,7 +9,7 @@ const Layout = () => {
     <div className="overflow-clip">
       <HeaderNavbar/>
 
-      <MainNavbar />
+     
 
       <div>
         <Outlet />

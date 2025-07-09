@@ -5,18 +5,18 @@ import BannerBuddha from "../../../assets/banner2.png";
 
 const Herosection = () => {
   return (
-    <div className="relative   ">
-      <div className="  h-[480px] bg-cover   ">
+    <div className="relative shadow-sm   ">
+      <div className="  h-[500px] bg-cover   ">
         <img src={BannerImg} className="w-full h-full bg-contain " />
         <div className="bg-[#FEF7E9]/50 absolute top-0 right-0 bottom-0 left-0 "></div>
-        <div className="absolute top-0 right-0 left-0 bottom-0 flex justify-between  w-11/12 mx-28  ">
+        <div className="absolute top-0 right-0 left-0 bottom-0 flex justify-between  w-11/12 mx-24  ">
           {/* text-section */}
           <div className="flex flex-col gap-9 justify-center  w-[50%] h-full   ">
             {/* for heading & slogan */}
             <div className="flex flex-col gap-5">
               <h1 className="font-playfair text-[42px] font-[600] text-[#D9A441]  leading-tight flex flex-col ">
                 Discover Unique
-                <span className="text-[#A0522D]">
+                <span className="text-[#9B4E2B]">
 Handcrafted Treasures </span>
               </h1>
               <p className="text-base font-[400] font-poppins text-[#414141] leading-tight w-5/6 ">

@@ -62,17 +62,17 @@ const Featuredproducts = () => {
   };
 
   return (
-    <div className="bg-[#FAF0DD] w-full h-[640px] flex flex-col gap-7  ">
+    <div className="bg-[#FAF0DD] w-full h-[600px] flex flex-col shadow-[0px_1px_8px_0px_rgba(117,117,117,0.08)]  ">
       {/* title */}
 
-      <div className=" flex   items-center h-[120px] px-16 pt-16  ">
-        <span className="w-[25%] h-[1px] col-span-1 bg-[#F4E9CA]  "></span>
+      <div className=" flex   items-center   pt-10 justify-center  ">
+        <span className="w-[25%] h-[1px] col-span-1 bg-[#F4E9CA]   "></span>
 
-        <div className=" w-[50%]  flex flex-col items-center gap-0.5  ">
-          <h1 className="font-playfair font-[500] text-[42px] text-[#9B4E2B] mx-10 tracking-[0.42px]   ">
+        <div className=" w-fit   flex flex-col items-center gap-0.5  ">
+          <h1 className="font-playfair font-[600] text-[38px] text-[#9B4E2B]  tracking-[0.42px]   ">
             Our Featured Products
           </h1>
-          <p className="font-poppins font-[400] text-base text-[#414141] text-center leading-[20px] ">
+          <p className="font-poppins font-[400] text-[15px] text-[#414141] text-center leading-[20px] ">
             Our finest selections, loved for their authenticity,<br/>
  detail, and cultural essence.
           </p>
@@ -94,7 +94,7 @@ const Featuredproducts = () => {
           keyBoardControl
           pauseOnHover
           showDots={true}
-          containerClass="carousel-container  h-[440px] w-11/12 mx-auto   "
+          containerClass="carousel-container  h-[435px] w-11/12 mx-auto   "
           className="  "
           customDot={<CustomizeDots />}
         >
@@ -102,7 +102,7 @@ const Featuredproducts = () => {
             return (
               <div
                 key={index}
-                className="  flex flex-col gap-2 justify-center w-[275px] relative  h-[336px] m-auto   rounded-lg hover:shadow-md transition-all duration-300 group shadow-sm bg-white cursor-pointer   "
+                className="  flex flex-col gap-2 justify-center w-[275px] relative  h-[336px] m-auto   rounded-lg hover:shadow-md transition-all duration-300 group shadow-sm bg-white cursor-pointer    "
               >
                 <Badge name="Best Seller" />
 

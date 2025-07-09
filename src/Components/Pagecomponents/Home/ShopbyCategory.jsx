@@ -12,6 +12,7 @@ import { CustomizeDots } from "../../CustomizeArrow/Arrow";
 import { PiArrowRightLight } from "react-icons/pi";
 
 
+
 import { Link } from "react-router-dom";
 const ShopbyCategory = () => {
   const responsive = {
@@ -69,24 +70,24 @@ const ShopbyCategory = () => {
   ];
 
   return (
-    <div className="relative   ">
-      <img src={BannerImg} className="w-full h-[640px]     " />
-      <div className="bg-[#FEF7E9]/80 absolute top-0 right-0 bottom-0 left-0   "></div>
+    <div className="relative shadow-[0px_1px_8px_0px_rgba(117,117,117,0.08)]   ">
+      <img src={BannerImg} className="w-full h-[630px]     " />
+      <div className="bg-[#FDF2DDCC]/90 absolute top-0 right-0 bottom-0 left-0   "></div>
       <div className="absolute top-0 flex flex-col w-full gap-10   ">
         {/* for text */}
-        <div className=" flex   items-center h-[120px] px-16 pt-16  ">
-          <span className="w-[25%] h-[1px] col-span-1 bg-[#efdfb1]     "></span>
+        <div className=" flex   items-center justify-center h-[120px]  pt-16  ">
+          <span className="w-[25%] h-[1px] col-span-1 bg-[#F4E9CA]     "></span>
 
-          <div className="w-[50%]  flex flex-col items-center gap-0.5   ">
-            <h1 className="font-playfair font-semibold text-[42px] text-[#9B4E2B] mx-10 tracking-[0.42px]  ">
+          <div className="w-fit  flex flex-col items-center gap-0.5   ">
+            <h1 className="font-playfair font-semibold text-[38px] text-[#9B4E2B] mx-10 tracking-[0.42px]  ">
               Shop By Category
             </h1>
-            <p className="font-poppins font-[400] text-base text-[#414141] text-center leading-[20px]   ">
-              Discover handcrafted items across <br/> various categories, each piece
+            <p className="font-poppins font-[400] text-[15px] text-[#414141] text-center leading-[20px]   ">
+              Discover handcrafted items across  various categories,<br/> each piece
               telling its own unique story
             </p>
           </div>
-          <span className="w-[25%] h-[1px]  bg-[#efdfb1]  "></span>
+          <span className="w-[25%] h-[1px]  bg-[#F4E9CA]  "></span>
         </div>
         {/* for cards */}
         <div className=" w-full relative      ">
@@ -101,7 +102,7 @@ const ShopbyCategory = () => {
                   keyBoardControl
                   pauseOnHover
                   showDots={true}
-                  containerClass="carousel-container h-[455px] w-11/12 mx-auto   "
+                  containerClass="carousel-container h-[435px] w-11/12 mx-auto   "
                   className="  "
                   customDot={<CustomizeDots />}
                 >
