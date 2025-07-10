@@ -31,7 +31,7 @@ const Benefits = () => {
             {
                 benefits.map((val,i)=>{
                     return(
-                        <div className='flex flex-col items-center    '>
+                        <div className='flex flex-col items-center    ' key={i}>
                             <img src={val.image} alt='' className='w-16 h-16 ' />
                             
                             <h4 className='font-poppins font-medium text-[16px]  text-[#BA4A20] leading-3 tracking-[0.18px]'>{val.name}</h4>
