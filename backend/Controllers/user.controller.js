@@ -11,11 +11,11 @@ user.registerUser = async (req, res) => {
         const userExists = await userModel.findOne({ email });
         if (userExists) return res.status(400).json({ message: 'User already exists' });
 
-        // 🔐 Manual password hash
+
         const salt = await bcrypt.genSalt(10);
         const hashedPassword = await bcrypt.hash(password, salt);
 
-        // Create user with hashed password
+        
         const user = await userModel.create({
             name,
             email,
@@ -41,7 +41,7 @@ user.loginUser =async (req, res) => {
         const user = await userModel.findOne({ email });
         if (!user) return res.status(401).json({ message: 'Invalid email or password' });
 
-        // 🔐 Compare password manually
+        
         const isMatch = await bcrypt.compare(password, user.password);
         if (!isMatch) return res.status(401).json({ message: 'Invalid email or password' });
 
