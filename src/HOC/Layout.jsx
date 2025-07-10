@@ -8,7 +8,7 @@ const Layout = () => {
   return (
     <div className="overflow-clip">
       <HeaderNavbar/>
-
+<MainNavbar/>
      
 
       <div>

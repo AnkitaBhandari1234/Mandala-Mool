@@ -27,7 +27,7 @@ products crafted by skilled artisans from around the world
             </div>
             {/* for shop button */}
             <div>
-              <button className="font-poppins bg-[#BA4A20] text-lg font-medium text-white w-[155px] h-[48px] rounded-lg">
+              <button className="font-poppins bg-[#BA4A20] text-[16px] font-medium text-white w-[140px] h-[40px] rounded-lg">
                 Shop Now
               </button>
             </div>
